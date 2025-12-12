@@ -1,96 +1,279 @@
-<div class="container">
-    <header class="header">
-        <h1>DEEPAK KATARIA</h1>
-        <p><strong>Software Development Manager (Android SDK) | Mobile Engineering Leader</strong></p>
-        <div class="contact-info">
-            <span>📞 +91 9999963590</span>
-            <span>✉️ <a href="mailto:kataria.deepak86@gmail.com">kataria.deepak86@gmail.com</a></span>
-            <span>🔗 <a href="https://www.linkedin.com/in/deepak-kataria-40729050" target="_blank">LinkedIn Profile</a></span>
-        </div>
-    </header>
+<!--
+  Premium portfolio index.html — Deepak Kataria
 
-    <section>
-        <h2>Professional Summary</h2>
-        <div class="section-content">
-            <p>13+ years of experience in Android SDK & mobile application development. [cite_start]Proven expertise in Kotlin, Java, Jetpack, Retrofit, and Clean Architecture (MVVM, MVP, Modular)[cite: 7, 8]. [cite_start]Software Development Manager leading teams to build high-performance SDKs & enterprise apps with Agile practices[cite: 9]. [cite_start]Skilled in CI/CD (GitHub Actions, Jenkins), performance optimization, and stakeholder engagement[cite: 10, 19].</p>
-        </div>
-    </section>
+  Instructions:
+  1) Save this file as index.html and push to the root of your GitHub Pages repository.
+  2) Add an `assets/` folder in the repo and upload these images (use your uploaded photo and a banner):
+       - assets/profile.jpg    (your profile photo, square crop recommended)
+       - assets/banner.jpg     (hero/banner background)
+  3) If you want a custom domain (katariadeepak.com), create a file named CNAME (no extension) in the repo root containing exactly:
+       katariadeepak.com
+  4) Commit & push. In Settings → Pages, ensure branch main and root folder. Enable Enforce HTTPS once available.
+-->
 
-    <section>
-        <h2>Core Technical Skills</h2>
-        <div class="tech-skills">
-            [cite_start]<span class="skill-tag">Android SDK Development (AIDL, Payment & Biometric SDKs) [cite: 12]</span>
-            <span class="skill-tag">Kotlin | [cite_start]Java [cite: 13]</span>
-            <span class="skill-tag">Android Jetpack | [cite_start]Compose [cite: 13, 21]</span>
-            [cite_start]<span class="skill-tag">Architecture Patterns: MVVM, MVP, Clean, Modular [cite: 14]</span>
-            [cite_start]<span class="skill-tag">Databases: Room, SQLite, Realm [cite: 15]</span>
-            [cite_start]<span class="skill-tag">Networking: Retrofit, GraphQL [cite: 16, 21]</span>
-            [cite_start]<span class="skill-tag">CI/CD: GitHub Actions, Jenkins, Gradle [cite: 17, 21]</span>
-            [cite_start]<span class="skill-tag">Testing: JUnit, Espresso, Mockito, TDD [cite: 18]</span>
-        </div>
-    </section>
-    
-    <section>
-        <h2>Work Experience</h2>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Deepak Kataria — Android Engineering Leader | SDK Architect | Web & Mobile Development Services" />
+  <title>Deepak Kataria — Android Engineering Leader</title>
 
-        <div class="job-entry">
-            <h3>Software Development Manager (Android) at Evolute Fintech Innovations</h3>
-            <p><em>Nov 2023 - Present | Bengaluru</em></p>
-            <ul class="detail-list">
-                [cite_start]<li>Led full lifecycle of Android SDK projects, aligning with business goals and **improving transaction speed by 20%**[cite: 24, 40].</li>
-                [cite_start]<li>Mentored 6 developers, **increasing team productivity by 30%** and raising code quality[cite: 25].</li>
-                [cite_start]<li>Implemented CI/CD pipelines (GitHub Actions + Gradle), **reducing release cycle time by 25%**[cite: 26].</li>
-                [cite_start]<li>Delivered critical payment SDKs & biometric SDKs used across fintech & government platforms[cite: 27].</li>
-            </ul>
+  <style>
+    :root{
+      --bg:#0e1116; --panel:#0b0f14; --muted:#9aa7b3; --accent:#ffd166; --accent-2:#7c3aed; --glass: rgba(255,255,255,0.03);
+      --card-radius:16px; --max-w:1150px; --gap:22px; font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;background:linear-gradient(180deg,#071022 0%, #07162a 100%);color:#e6eef6}
+    a{color:var(--accent)}
+    .container{max-width:var(--max-w);margin:34px auto;padding:20px}
+
+    /* layout */
+    .layout{display:grid;grid-template-columns:320px 1fr;gap:24px}
+    .sidebar{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:22px;border-radius:var(--card-radius);border:1px solid rgba(255,255,255,0.04);box-shadow:0 12px 30px rgba(2,6,23,0.6)}
+    .content{background:transparent}
+
+    /* profile */
+    .profile-img{width:120px;height:120px;border-radius:20px;overflow:hidden;border:6px solid rgba(255,255,255,0.03);box-shadow:0 8px 20px rgba(2,6,23,0.6)}
+    .profile-img img{width:100%;height:100%;object-fit:cover;display:block}
+    h2{margin:12px 0 4px;font-size:20px}
+    .role{background:linear-gradient(90deg,var(--accent-2),var(--accent));padding:6px 10px;border-radius:999px;color:#071022;font-weight:700;display:inline-block;font-size:13px}
+    .meta{color:var(--muted);font-size:14px;margin-top:8px}
+
+    /* tabs container (right side) */
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:var(--card-radius);border:1px solid rgba(255,255,255,0.03);box-shadow:0 12px 30px rgba(2,6,23,0.6)}
+
+    .tabs{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+    .tabs button{background:transparent;border:0;padding:10px 14px;border-radius:10px;color:var(--muted);cursor:pointer;font-weight:600}
+    .tabs button.active{background:linear-gradient(90deg,var(--accent-2),var(--accent));color:#071022}
+
+    .tab-panel{display:none;animation:fadeUp 0.5s ease both}
+    .tab-panel.active{display:block}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+    /* hero area */
+    .hero{display:flex;align-items:center;gap:18px;padding:18px;border-radius:12px;background:linear-gradient(90deg, rgba(12,17,23,0.5), rgba(12,17,23,0.2));position:relative;overflow:hidden}
+    .hero .hero-content{flex:1}
+    .hero h1{margin:0;font-size:22px}
+    .hero p{margin:8px 0 0;color:var(--muted)}
+    .hero-roles{margin-top:10px;display:flex;gap:8px;align-items:center}
+    .role-chip{padding:8px 12px;border-radius:999px;background:rgba(255,255,255,0.03);color:var(--muted);font-weight:700}
+
+    /* services grid */
+    .services{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
+    .service{padding:14px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03)}
+    .service h4{margin:0 0 6px}
+    .service p{margin:0;color:var(--muted);font-size:14px}
+
+    /* projects */
+    .projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .project-card{padding:14px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03)}
+
+    /* contact */
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    input,textarea{width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+
+    footer{margin-top:30px;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:980px){.layout{grid-template-columns:1fr}.profile-img{width:100px;height:100px}}
+    @media (max-width:640px){.services,.projects-grid{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="layout">
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div style="display:flex;gap:14px;align-items:center">
+          <div class="profile-img"><img src="assets/profile.jpg" alt="Deepak Kataria" /></div>
+          <div>
+            <h2>Deepak Kataria</h2>
+            <div class="role">Android Engineering Leader</div>
+            <div class="meta">13+ years • SDK Architect • Android & Mobile Platforms</div>
+          </div>
         </div>
 
-        <div class="job-entry">
-            <h3>Software Tech Lead (Android) at MapmyIndia (CE Info Systems)</h3>
-            <p><em>Oct 2015-Oct 2023 | Delhi</em></p>
-            <ul class="detail-list">
-                [cite_start]<li>Delivered multiple core Android SDKs and apps (WorkMate, In Touch, Digital Sky)[cite: 28].</li>
-                [cite_start]<li>Scaled **WorkMate** from v1.0 to v6.8, supporting offline check-ins, navigation & real-time tracking[cite: 29, 42].</li>
-                [cite_start]<li>Built biometric & payment-ready SDKs integrated in mission-critical government & enterprise solutions[cite: 30].</li>
-                [cite_start]<li>Improved app stability & performance, reducing crash rates and enhancing UX[cite: 31].</li>
-            </ul>
+        <div style="margin-top:18px">
+          <div style="display:flex;gap:8px;align-items:center;margin-bottom:8px"><strong>Contact</strong></div>
+          <div class="meta">deepakkataria07@gmail.com</div>
+          <div class="meta" style="margin-top:6px">Haryana, India</div>
         </div>
-    </section>
 
-    <section>
-        <h2>Selected Projects & Contributions</h2>
-        <div class="section-content">
-            <div class="project-item">
-                [cite_start]<strong>Evolute SDK Service (Payment Devices):</strong> Built scalable Android SDK for EMV, contactless & magnetic card transactions; improved processing by 20%[cite: 39, 40].
+        <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:16px 0">
+
+        <div>
+          <strong>Quick Links</strong>
+          <div style="margin-top:10px;display:flex;flex-direction:column;gap:8px">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Portfolio</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:16px 0">
+
+        <div>
+          <strong>Follow</strong>
+          <div style="margin-top:8px" class="meta"><a href="https://github.com/katariadeepak86" target="_blank">GitHub</a> · <a href="https://www.linkedin.com/in/deepakkataria" target="_blank">LinkedIn</a></div>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="content">
+        <div class="card">
+          <!-- hero with banner background -->
+          <div class="hero" style="background-image:url('assets/banner.jpg');background-size:cover;background-position:center;">
+            <div class="hero-content">
+              <h1>Hi, I'm Deepak — Android Engineering Leader</h1>
+              <p>I build high-performance Android apps and SDKs. I also provide end-to-end web and mobile development services for startups and enterprises.</p>
+              <div class="hero-roles">
+                <div class="role-chip">SDK Architect</div>
+                <div class="role-chip">Android · Kotlin</div>
+                <div class="role-chip">Full-stack Web</div>
+                <div class="role-chip">Consulting</div>
+              </div>
             </div>
-            <div class="project-item">
-                [cite_start]<strong>FPS IRIS SDK:</strong> Developed biometric SDK for Aadhaar/eKYC, enabling secure government-grade authentication[cite: 41].
+            <div style="min-width:220px;text-align:right">
+              <a class="role" href="/Deepak_Kataria_Resume.pdf" download>Download Resume</a>
             </div>
-            <div class="project-item">
-                [cite_start]<strong>InTouch SDK (MapmyIndia):</strong> Designed Android SDK for real-time location tracking, enabling third-party integration[cite: 43].
+          </div>
+
+          <!-- tabs -->
+          <div style="margin-top:18px">
+            <div class="tabs" role="tablist">
+              <button class="active" data-tab="about">About</button>
+              <button data-tab="services">Services</button>
+              <button data-tab="projects">Portfolio</button>
+              <button data-tab="blog">Blog</button>
+              <button data-tab="contact">Contact</button>
             </div>
-            <div class="project-item">
-                [cite_start]<strong>Digital Sky (Drone Compliance):</strong> Developed modular Android component for NPNT-compliant drone operations[cite: 44].
+
+            <div id="about" class="tab-panel active">
+              <h3>About Me</h3>
+              <p class="meta">I am an Android Engineering Leader with 13+ years of experience building mobile applications and SDKs across fintech, retail, and enterprise. I lead engineering teams, design SDK architectures, and mentor developers to deliver high-quality software products.</p>
+              <div style="margin-top:12px">
+                <strong>Core Skills</strong>
+                <div class="services">
+                  <div class="service"><h4>Kotlin · Java</h4><p>Native Android development with modern patterns (MVVM, Compose).</p></div>
+                  <div class="service"><h4>SDKs & AIDL</h4><p>Custom SDK design, hardware integrations, secure transaction flows.</p></div>
+                  <div class="service"><h4>Web & Backend</h4><p>Full-stack web applications, APIs, and GraphQL integrations.</p></div>
+                  <div class="service"><h4>CI/CD & Testing</h4><p>Automated pipelines, unit & UI testing, and release engineering.</p></div>
+                </div>
+              </div>
             </div>
+
+            <div id="services" class="tab-panel">
+              <h3>Services I Provide</h3>
+              <p class="meta">End-to-end services for web & mobile including product strategy, architecture, development and delivery.</p>
+              <div class="services" style="margin-top:12px">
+                <div class="service"><h4>Web Development</h4><p>Modern web apps, admin dashboards, responsive sites.</p></div>
+                <div class="service"><h4>Mobile Apps</h4><p>Android (Native & Compose), iOS, and Flutter cross-platform apps.</p></div>
+                <div class="service"><h4>Custom SDKs</h4><p>Payments SDKs, device integrations, modular SDK platforms.</p></div>
+                <div class="service"><h4>Consulting & Mentoring</h4><p>Architecture reviews, team mentoring, and delivery coaching.</p></div>
+              </div>
+            </div>
+
+            <div id="projects" class="tab-panel">
+              <h3>Selected Projects</h3>
+              <div class="projects-grid" style="margin-top:12px">
+                <div class="project-card">
+                  <strong>Mobile Payments SDK — Fintech</strong>
+                  <p class="meta">Secure SDK with AIDL integrations and offline fallback.</p>
+                  <ul>
+                    <li>Modular SDK architecture & clear onboarding docs.</li>
+                    <li>Coroutine-based transactions and robust error handling.</li>
+                  </ul>
+                </div>
+                <div class="project-card">
+                  <strong>App Modernization — Enterprise</strong>
+                  <p class="meta">Migrated legacy app to modular Jetpack components.</p>
+                  <ul>
+                    <li>Reduced build times by 40% and increased stability.</li>
+                  </ul>
+                </div>
+                <div class="project-card">
+                  <strong>Health & Fitness App</strong>
+                  <p class="meta">Jetpack Compose UI rebuild and performance tuning.</p>
+                  <ul><li>Improved rendering and reduced jank.</li></ul>
+                </div>
+                <div class="project-card">
+                  <strong>Internal SDK Platform</strong>
+                  <p class="meta">Shared modules, centralized telemetry, sample integrations.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="blog" class="tab-panel">
+              <h3>Blog</h3>
+              <p class="meta">Technical posts & engineering leadership essays (coming soon). If you want to collaborate on a topic, contact me.</p>
+            </div>
+
+            <div id="contact" class="tab-panel">
+              <h3>Contact</h3>
+              <p class="meta">Interested in working together? Send a message or email me directly at <a href="mailto:deepakkataria07@gmail.com">deepakkataria07@gmail.com</a>.</p>
+              <form onsubmit="return handleSubmit(event)" style="margin-top:12px">
+                <div class="contact-grid">
+                  <input name="name" placeholder="Your name" required />
+                  <input name="email" placeholder="Your email" required type="email" />
+                </div>
+                <textarea name="message" placeholder="Message" rows="5" style="margin-top:8px" required></textarea>
+                <div style="margin-top:10px;display:flex;gap:10px;align-items:center">
+                  <button class="role" type="submit">Send Message</button>
+                  <div class="meta">Or email: <a href="mailto:deepakkataria07@gmail.com">deepakkataria07@gmail.com</a></div>
+                </div>
+              </form>
+            </div>
+
+          </div>
         </div>
-    </section>
 
-    <section>
-        <h2>Education & Certification</h2>
-        <div class="section-content">
-            <h3>Certifications</h3>
-            <ul class="detail-list">
-                [cite_start]<li>CSPO (Certified Scrum Product Owner) [cite: 49]</li>
-            </ul>
-            <h3>Education</h3>
-            <ul class="detail-list">
-                [cite_start]<li>**MCA**, BSA Institute of Technologies and Management, MDU Rohtak, 2010 [cite: 47]</li>
-                [cite_start]<li>**B.Sc.**, Pt JLN Government College, MDU Rohtak, 2007 [cite: 47]</li>
-            </ul>
-        </div>
-    </section>
+        <footer>
+          © 2025 Deepak Kataria — Android Engineering Leader · SDK Architect
+        </footer>
+      </main>
 
-    <footer style="text-align: center; font-size: 0.8em; color: #777; margin-top: 30px; padding-top: 10px; border-top: 1px solid #eee;">
-        Last Updated: Dec 2025 | Developed for GitHub Pages
-    </footer>
+    </div>
+  </div>
 
-</div>
+  <script>
+    // Tabs
+    document.querySelectorAll('.tabs button').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        document.querySelectorAll('.tabs button').forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+        const tab = btn.getAttribute('data-tab');
+        document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+        const panel = document.getElementById(tab);
+        if(panel) panel.classList.add('active');
+      });
+    });
+
+    // Contact form (local) — replace with your endpoint if needed
+    function handleSubmit(e){
+      e.preventDefault();
+      alert('Thanks — message captured locally. Please email me directly for now.');
+      e.target.reset();
+      return false;
+    }
+
+    // Smooth scroll for sidebar anchors
+    document.querySelectorAll('aside a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (ev)=>{
+        ev.preventDefault(); const id = a.getAttribute('href').slice(1);
+        const panel = document.getElementById(id);
+        if(panel){
+          // switch to the tab if tab exists
+          const btn = document.querySelector('.tabs button[data-tab="'+id+'"]');
+          if(btn) btn.click();
+          panel.scrollIntoView({behavior:'smooth',block:'start'});
+        }
+      });
+    });
+
+  </script>
+</body>
+</html>
