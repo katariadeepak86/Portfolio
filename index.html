@@ -1,242 +1,96 @@
-<!--
-  index.html — Personal Portfolio for Deepak Kataria
-  Instructions:
-  1) Save this file as index.html and push to the root of your GitHub Pages repo (e.g., deepakkataria.github.io or your project pages repo).
-  2) If you want a custom domain (deepakkataria.com), create a file named CNAME (no extension) in the repo root containing exactly:
-       deepakkataria.com
-  3) Commit & push. Enable Pages from the main branch (root).
-  4) DNS: Add GitHub Pages A records and CNAME (www → username.github.io) on Hostinger as discussed.
--->
-
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Deepak Kataria — Android Engineering Leader | 13+ years | SDK Architect" />
-  <title>Deepak Kataria — Android Engineering Leader</title>
-
-  <!-- Simple, self-contained styles -->
-  <style>
-    :root{
-      --bg:#0f1724; --card:#0b1220; --accent:#6ee7b7; --muted:#94a3b8; --glass: rgba(255,255,255,0.04);
-      --max-width:1100px; --radius:12px; --gap:22px; --pad:20px;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      color-scheme: dark;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071022 0%, #07162a 100%);color:#e6eef6}
-    a{color:var(--accent);text-decoration:none}
-    .wrap{max-width:var(--max-width);margin:36px auto;padding:0 18px}
-    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
-    .brand{display:flex;align-items:center;gap:12px}
-    .avatar{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,#0ea5a1,#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700}
-    h1{margin:0;font-size:clamp(20px,3vw,28px)}
-    p.lead{color:var(--muted);margin:6px 0 0}
-
-    .hero{display:grid;grid-template-columns:1fr 360px;gap:32px;align-items:center;margin-top:28px}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:var(--radius);padding:22px;box-shadow:0 6px 22px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
-
-    .cta{display:flex;gap:12px;margin-top:16px}
-    .btn{padding:10px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
-    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--accent)}
-    .btn-primary{background:linear-gradient(90deg,#06b6d4,#7c3aed);color:#071022}
-
-    /* sections */
-    section{margin-top:28px}
-    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-    .skills{display:flex;flex-wrap:wrap;gap:10px}
-    .chip{background:var(--glass);padding:8px 12px;border-radius:999px;color:var(--muted);font-weight:600}
-
-    .projects .proj{display:flex;flex-direction:column;gap:10px;padding:12px;border-radius:8px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03)}
-    .meta{font-size:13px;color:var(--muted)}
-
-    footer{margin:36px 0 80px;color:var(--muted);font-size:14px}
-
-    /* responsive */
-    @media (max-width:880px){
-      .hero{grid-template-columns:1fr;}
-      .grid{grid-template-columns:1fr}
-    }
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="avatar">DK</div>
-        <div>
-          <h1>Deepak Kataria</h1>
-          <p class="lead">Android Engineering Leader · 13+ years · SDK Architect</p>
+<div class="container">
+    <header class="header">
+        <h1>DEEPAK KATARIA</h1>
+        <p><strong>Software Development Manager (Android SDK) | Mobile Engineering Leader</strong></p>
+        <div class="contact-info">
+            <span>📞 +91 9999963590</span>
+            <span>✉️ <a href="mailto:kataria.deepak86@gmail.com">kataria.deepak86@gmail.com</a></span>
+            <span>🔗 <a href="https://www.linkedin.com/in/deepak-kataria-40729050" target="_blank">LinkedIn Profile</a></span>
         </div>
-      </div>
-      <nav>
-        <a href="#about">About</a>
-        &nbsp;·&nbsp;
-        <a href="#projects">Projects</a>
-        &nbsp;·&nbsp;
-        <a href="#contact">Contact</a>
-      </nav>
     </header>
 
-    <main>
-      <section class="hero">
-        <div class="card">
-          <h2 style="margin:0 0 6px">Building scalable Android apps & SDKs</h2>
-          <p class="meta">I design and deliver high-performance Android applications and SDKs across fintech, retail, and enterprise domains. I focus on clean architecture, developer experience, and measurable engineering outcomes.</p>
-          <div class="cta">
-            <a class="btn btn-primary" href="/Deepak_Kataria_Resume.pdf" download>Download Resume</a>
-            <a class="btn btn-ghost" href="#contact">Contact</a>
-          </div>
+    <section>
+        <h2>Professional Summary</h2>
+        <div class="section-content">
+            <p>13+ years of experience in Android SDK & mobile application development. [cite_start]Proven expertise in Kotlin, Java, Jetpack, Retrofit, and Clean Architecture (MVVM, MVP, Modular)[cite: 7, 8]. [cite_start]Software Development Manager leading teams to build high-performance SDKs & enterprise apps with Agile practices[cite: 9]. [cite_start]Skilled in CI/CD (GitHub Actions, Jenkins), performance optimization, and stakeholder engagement[cite: 10, 19].</p>
+        </div>
+    </section>
 
-          <section style="margin-top:18px">
-            <h3 style="margin:0 0 8px">Core Expertise</h3>
-            <div class="skills">
-              <div class="chip">Kotlin · Java</div>
-              <div class="chip">MVVM · Clean Architecture</div>
-              <div class="chip">Jetpack · Compose</div>
-              <div class="chip">Coroutines · Flow</div>
-              <div class="chip">AIDL · SDKs</div>
-              <div class="chip">Retrofit · GraphQL</div>
-              <div class="chip">CI/CD · GitHub Actions</div>
-              <div class="chip">Testing · TDD</div>
+    <section>
+        <h2>Core Technical Skills</h2>
+        <div class="tech-skills">
+            [cite_start]<span class="skill-tag">Android SDK Development (AIDL, Payment & Biometric SDKs) [cite: 12]</span>
+            <span class="skill-tag">Kotlin | [cite_start]Java [cite: 13]</span>
+            <span class="skill-tag">Android Jetpack | [cite_start]Compose [cite: 13, 21]</span>
+            [cite_start]<span class="skill-tag">Architecture Patterns: MVVM, MVP, Clean, Modular [cite: 14]</span>
+            [cite_start]<span class="skill-tag">Databases: Room, SQLite, Realm [cite: 15]</span>
+            [cite_start]<span class="skill-tag">Networking: Retrofit, GraphQL [cite: 16, 21]</span>
+            [cite_start]<span class="skill-tag">CI/CD: GitHub Actions, Jenkins, Gradle [cite: 17, 21]</span>
+            [cite_start]<span class="skill-tag">Testing: JUnit, Espresso, Mockito, TDD [cite: 18]</span>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Work Experience</h2>
+
+        <div class="job-entry">
+            <h3>Software Development Manager (Android) at Evolute Fintech Innovations</h3>
+            <p><em>Nov 2023 - Present | Bengaluru</em></p>
+            <ul class="detail-list">
+                [cite_start]<li>Led full lifecycle of Android SDK projects, aligning with business goals and **improving transaction speed by 20%**[cite: 24, 40].</li>
+                [cite_start]<li>Mentored 6 developers, **increasing team productivity by 30%** and raising code quality[cite: 25].</li>
+                [cite_start]<li>Implemented CI/CD pipelines (GitHub Actions + Gradle), **reducing release cycle time by 25%**[cite: 26].</li>
+                [cite_start]<li>Delivered critical payment SDKs & biometric SDKs used across fintech & government platforms[cite: 27].</li>
+            </ul>
+        </div>
+
+        <div class="job-entry">
+            <h3>Software Tech Lead (Android) at MapmyIndia (CE Info Systems)</h3>
+            <p><em>Oct 2015-Oct 2023 | Delhi</em></p>
+            <ul class="detail-list">
+                [cite_start]<li>Delivered multiple core Android SDKs and apps (WorkMate, In Touch, Digital Sky)[cite: 28].</li>
+                [cite_start]<li>Scaled **WorkMate** from v1.0 to v6.8, supporting offline check-ins, navigation & real-time tracking[cite: 29, 42].</li>
+                [cite_start]<li>Built biometric & payment-ready SDKs integrated in mission-critical government & enterprise solutions[cite: 30].</li>
+                [cite_start]<li>Improved app stability & performance, reducing crash rates and enhancing UX[cite: 31].</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Selected Projects & Contributions</h2>
+        <div class="section-content">
+            <div class="project-item">
+                [cite_start]<strong>Evolute SDK Service (Payment Devices):</strong> Built scalable Android SDK for EMV, contactless & magnetic card transactions; improved processing by 20%[cite: 39, 40].
             </div>
-          </section>
-
-        </div>
-
-        <aside class="card" style="display:flex;flex-direction:column;gap:12px">
-          <div>
-            <strong>Experience</strong>
-            <div class="meta">Android Engineering Leader · 13+ years</div>
-          </div>
-
-          <div>
-            <strong>Location</strong>
-            <div class="meta">Haryana, India</div>
-          </div>
-
-          <div>
-            <strong>Contact</strong>
-            <div class="meta">deepakkataria07@gmail.com</div>
-          </div>
-
-          <div style="margin-top:auto">
-            <strong>Links</strong>
-            <div class="meta"><a href="https://github.com/katariadeepak86" target="_blank">GitHub</a> · <a href="https://www.linkedin.com/in/deepakkataria" target="_blank">LinkedIn</a></div>
-          </div>
-        </aside>
-      </section>
-
-      <section id="about">
-        <div class="card">
-          <h3>About Me</h3>
-          <p>I am an Android Engineering Leader with 13+ years of experience building high-performance mobile applications and SDKs. I help teams adopt modern Android patterns, reduce technical debt, and ship reliable products on time. My technical focus includes SDK architecture, AIDL integrations, Kotlin Coroutines, Jetpack libraries, and scalable modularization strategies.</p>
-        </div>
-      </section>
-
-      <section id="projects" class="projects">
-        <h3>Selected Projects</h3>
-        <div class="grid">
-
-          <div class="proj card">
-            <strong>Mobile Payments SDK — Fintech</strong>
-            <div class="meta">Design & development of a secure payments SDK with AIDL device integrations and offline fallback.</div>
-            <ul>
-              <li>Extensible modular SDK architecture for fast integration.</li>
-              <li>Coroutine-based transaction flows and robust error handling.</li>
-              <li>Improved integration time from days to hours for clients.</li>
-            </ul>
-          </div>
-
-          <div class="proj card">
-            <strong>Android App Modernization</strong>
-            <div class="meta">Migration of a legacy app to modular architecture and Jetpack components.</div>
-            <ul>
-              <li>Reduced build time by 42% and improved stability.</li>
-              <li>Introduced shared modules and strict code review process.</li>
-            </ul>
-          </div>
-
-          <div class="proj card">
-            <strong>Health & Fitness App — UI Performance</strong>
-            <div class="meta">Led UI rebuild using Jetpack Compose with performance optimizations.</div>
-            <ul>
-              <li>30% faster UI rendering and smoother animations.</li>
-              <li>Reactive state management improving UX under heavy loads.</li>
-            </ul>
-          </div>
-
-          <div class="proj card">
-            <strong>Internal SDK Platform</strong>
-            <div class="meta">Platform used by multiple client apps to standardize payments and analytics.</div>
-            <ul>
-              <li>Centralized logging & telemetry, consistent onboarding docs, and sample apps.</li>
-            </ul>
-          </div>
-
-        </div>
-      </section>
-
-      <section id="leadership">
-        <div class="card">
-          <h3>Leadership & Mentoring</h3>
-          <ul>
-            <li>Mentored 20+ Android engineers and ran architecture reviews and coding standards.</li>
-            <li>Introduced TDD practices and CI pipelines (GitHub Actions).</li>
-            <li>Owned cross-team technical strategy and roadmap execution.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="contact">
-        <div class="card">
-          <h3>Contact</h3>
-          <p>If you'd like to reach out for leadership roles, SDK architecture consulting, or collaborations – drop me a message.</p>
-
-          <form id="contactForm" action="#" onsubmit="return handleForm(event)">
-            <div style="display:flex;gap:10px;flex-wrap:wrap">
-              <input name="name" placeholder="Your name" required style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
-              <input name="email" type="email" placeholder="Your email" required style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+            <div class="project-item">
+                [cite_start]<strong>FPS IRIS SDK:</strong> Developed biometric SDK for Aadhaar/eKYC, enabling secure government-grade authentication[cite: 41].
             </div>
-            <textarea name="message" placeholder="Message" rows="4" required style="width:100%;margin-top:10px;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"></textarea>
-            <div style="margin-top:10px;display:flex;gap:10px;align-items:center">
-              <button class="btn btn-primary" type="submit">Send Message</button>
-              <small class="meta">Or email me directly at <a href="mailto:deepakkataria07@gmail.com">deepakkataria07@gmail.com</a></small>
+            <div class="project-item">
+                [cite_start]<strong>InTouch SDK (MapmyIndia):</strong> Designed Android SDK for real-time location tracking, enabling third-party integration[cite: 43].
             </div>
-            <div id="formMsg" style="margin-top:10px;color:var(--accent);display:none"></div>
-          </form>
+            <div class="project-item">
+                [cite_start]<strong>Digital Sky (Drone Compliance):</strong> Developed modular Android component for NPNT-compliant drone operations[cite: 44].
+            </div>
         </div>
-      </section>
+    </section>
 
-    </main>
+    <section>
+        <h2>Education & Certification</h2>
+        <div class="section-content">
+            <h3>Certifications</h3>
+            <ul class="detail-list">
+                [cite_start]<li>CSPO (Certified Scrum Product Owner) [cite: 49]</li>
+            </ul>
+            <h3>Education</h3>
+            <ul class="detail-list">
+                [cite_start]<li>**MCA**, BSA Institute of Technologies and Management, MDU Rohtak, 2010 [cite: 47]</li>
+                [cite_start]<li>**B.Sc.**, Pt JLN Government College, MDU Rohtak, 2007 [cite: 47]</li>
+            </ul>
+        </div>
+    </section>
 
-    <footer>
-      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
-        <div>© 2025 Deepak Kataria</div>
-        <div style="color:var(--muted)">Built with ❤️ · Android Engineering Leader</div>
-      </div>
+    <footer style="text-align: center; font-size: 0.8em; color: #777; margin-top: 30px; padding-top: 10px; border-top: 1px solid #eee;">
+        Last Updated: Dec 2025 | Developed for GitHub Pages
     </footer>
-  </div>
 
-  <script>
-    // Lightweight contact form handler (non-emailing). Replace with your endpoint if you have one.
-    function handleForm(e){
-      e.preventDefault();
-      const f = e.target;
-      const msg = document.getElementById('formMsg');
-      msg.style.display='block'; msg.textContent='Thanks — message captured locally. Please email me directly for now.';
-      setTimeout(()=>{ msg.style.display='none'; f.reset() }, 3000);
-      return false;
-    }
-
-    // Small script to add smooth scrolling for internal links
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click', (ev)=>{
-        ev.preventDefault(); const target = document.querySelector(a.getAttribute('href'));
-        if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
-      })
-    });
-  </script>
-</body>
-</html>
+</div>
